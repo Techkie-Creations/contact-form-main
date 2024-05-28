@@ -96,28 +96,26 @@ const ContactForm = () => {
       <form className="form" onSubmit={handleSubmit}>
         <div className="person">
           <div className="mb-3">
-            <label className="form-label">
+            <label htmlFor="firstName" className="form-label">
               First Name <span className="astar">*</span>
             </label>
             <input
               name="firstName"
               type="text"
               className={`form-control ${first ? "" : "invalid-box"}`}
-              id="exampleFormControlInput1"
             />
             <div className={first ? "none" : "invalid"}>
               This field is required
             </div>
           </div>
           <div className="mb-3">
-            <label className="form-label">
+            <label htmlFor="lastName" className="form-label">
               Last Name <span className="astar">*</span>
             </label>
             <input
               name="lastName"
               type="text"
               className={`form-control ${last ? "" : "invalid-box"}`}
-              id="exampleFormControlInput1"
             />
             <div className={last ? "none" : "invalid"}>
               This field is required
@@ -125,14 +123,13 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="mb-3">
-          <label className="form-label">
+          <label htmlFor="email" className="form-label">
             Email Address <span className="astar">*</span>
           </label>
           <input
             name="email"
             type="email"
             className={`form-control ${email ? "" : "invalid-box"}`}
-            id="exampleFormControlInput1"
           />
           <div className={email ? "none" : "invalid"}>
             Please enter a valid email address
@@ -172,7 +169,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="msg-block">
-          <label>
+          <label htmlFor="msg">
             Message <span className="astar">*</span>
           </label>
           <textarea
