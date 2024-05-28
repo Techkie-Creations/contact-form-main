@@ -81,7 +81,6 @@ const ContactForm = () => {
 
   // HANDLE CLICK CALLBACK FUNCTION
   const handleClick = (vals) => {
-    console.log(vals.target.value);
     if (vals.target.value == "general") {
       document.getElementById("general").classList.add("checked");
       document.getElementById("support").classList.remove("checked");
