@@ -102,6 +102,7 @@ const ContactForm = () => {
             <input
               name="firstName"
               type="text"
+              id="firstName"
               className={`form-control ${first ? "" : "invalid-box"}`}
             />
             <div className={first ? "none" : "invalid"}>
@@ -115,6 +116,7 @@ const ContactForm = () => {
             <input
               name="lastName"
               type="text"
+              id="lastName"
               className={`form-control ${last ? "" : "invalid-box"}`}
             />
             <div className={last ? "none" : "invalid"}>
@@ -129,6 +131,7 @@ const ContactForm = () => {
           <input
             name="email"
             type="email"
+            id="email"
             className={`form-control ${email ? "" : "invalid-box"}`}
           />
           <div className={email ? "none" : "invalid"}>
@@ -175,7 +178,7 @@ const ContactForm = () => {
           <textarea
             className={`form-control msg-txt ${msg ? "" : "invalid-box"}`}
             name="msg"
-            id="floatingTextarea2"
+            id="msg"
           ></textarea>
           <div className={msg ? "none" : "invalid"}>This field is required</div>
         </div>
